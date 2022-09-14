@@ -5,15 +5,18 @@ Progetto per la parte Android del corso MobDev, consiste in un'applicazione per 
 Con l'app **Memorandum** è possibile:
 
  - Aggiungere memo con un titolo, una descrizione, un luogo, una data ed un'ora. <br />
+  ![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Addactivtygif.gif)
  
  - Impostare la memo come ''completata'' o riportarla allo stato ''attiva'' <br />
+ ![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Detailactivitygif.gif)
 
  - Visualizzare le memo attive, complete o scadute. <br />
+![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/mainactivirtgif.gif)
 
  - Visualizzare sulla mappa tutte le notifiche attive. <br />
-
+![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/MapActivitygif.gif)
  - Ricevere una notifica sul dispositivo quando ci si avvicina ad una memo attiva (anche se l'app è chiusa). <br />
-
+![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Notificationgif.gif)
 
 ## Uno sguardo da vicino
 L'applicazione è basata sul modello **MVC**: **M**odel, **V**iew, **C**ontroller.
@@ -39,17 +42,18 @@ Oltre a mostrare le note la MainActivity si occupa di inizializzare il *location
  -  L' **addActivity** si occupa dell'aggiunta delle memo, una volta inseriti il *titolo*, una *descrizione*, il *luogo* nei rispettivi *EditText* e la *data* e l'*ora* negli appositi *widget* è possibile creare la memo premendo il tasto apposito.<br />
  Una volta premuto il tasto viene effettuato un controllo per vedere se dei campi sono vuoti e controllare che l'utente abbia inserito una data valida (dal giorno attuale in poi), infine verifica se l'operazione di **geocoding** per ricavare latitudine e longitudine dal luogo inserito è andata a buon fine. <br />
 La funzione che si occupa di effettuare tutti questi controlli prende il nome di "*saveInput*" ed è impostata come proprietà *onclick* del FloatingActionButton nel file XML *activity_add*, in caso di campi non validi o mancanti viene chiamata una **ToastNotification** per segnalarlo all'utente.<br />
-//immagine addActivity
+<img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/AddActivity.png width="30%" height="30%">
 
  - La **detailActivity** viene chiamata nell'override dell'evento *onclick* del **memoAdapter**. Mostra titolo, scadenza, luogo e descrizione della memo selezionata, inoltre è presente un bottone per modificare lo status della memo (attiva/completata),se la memo è scaduta (controllo fatto tramite i due metodi della classe Utils) imposta il TextColor della TextView della data in colore rosso.<br />
- //immagine detailActivity
+<img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/DetailActivity.png width="30%" height="30%">
  
  - La **mapActivity** mostra una mappa,creata tramite l'API map di google, centrata sulla posizione dell'utente.<br />
  L'activity inoltre crea un'annotazione sulla mappa per ogni promemoria dell'ArrayList di memo attive ricevuto dalla mainActivity tramite *Intent*. 
- Quando l'utente clicca su un'annotazione viene mostrato il suo titolo.
- //immagine detailActivity
+ Quando l'utente clicca su un'annotazione viene mostrato il suo titolo.<br />
+<img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/MapActivity.png width="30%" height="30%">
  
- - L'**infoFragment** è accessibile dalla MainActivity, cliccando sul *menuButton* del punto di domanda, mostra una TextView in cui viene illustrata una guida sul funzionamento dell'app. Nel menu è anche presente un altro tasto per mostrare le memo scadute.
+ - L'**infoFragment** è accessibile dalla MainActivity, cliccando sul *menuButton* del punto di domanda, mostra una TextView in cui viene illustrata una guida sul funzionamento dell'app. Nel menu è anche presente un altro tasto per mostrare le memo scadute.<br />
+<img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Fragment.png width="30%" height="30%">
 
 ### RecyclerViewer
 >La classe RecyclerView semplifica la visualizzazione e la gestione di insiemi di dati di grandi dimensioni, è un contenitore per la visualizzazione di insiemi di dati di grandi dimensioni che è possibile scorrere in modo efficiente mantenendo un numero limitato di Views.
