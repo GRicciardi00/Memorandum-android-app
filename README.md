@@ -24,7 +24,7 @@ L'applicazione è basata sul modello **MVC**: **M**odel, **V**iew, **C**ontrolle
 ### Model
 >Il *model* si occupa di definire i dati dell'applicazione. <br />
 
-Le classi *Memo* e *MemoList* costituiscono il model dell'applicazione. Ho deciso di usare una classe Forecast per gestire in modo. MemoList permette di ricavare una lista di tutte le memo attive ed ha anche altri metodi utilizzati dalle varie activity.
+Le classi *Memo* e *MemoList* costituiscono il model dell'applicazione. MemoList permette di ricavare una lista di tutte le memo attive ed ha anche altri metodi utilizzati dalle varie activity.
 ### View
 > Le *view* visualizzano i dati contenuti nel model e "catturano" l'interazione dell'utente con l'applicazione
 >
