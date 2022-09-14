@@ -8,15 +8,15 @@ Con l'app **Memorandum** è possibile:
    <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Addactivtygif.gif width="25%" height="25%">
  
  - Impostare la memo come ''completata'' o riportarla allo stato ''attiva'' <br />
- ![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Detailactivitygif.gif)
+  <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Detailactivitygif.gif width="25%" height="25%">
 
  - Visualizzare le memo attive, complete o scadute. <br />
-![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/mainactivirtgif.gif)
+ <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/mainactivirtgif.gif width="25%" height="25%">
 
  - Visualizzare sulla mappa tutte le notifiche attive. <br />
-![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/MapActivitygif.gif)
+ <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/MapActivitygif.gif width="25%" height="25%">
  - Ricevere una notifica sul dispositivo quando ci si avvicina ad una memo attiva (anche se l'app è chiusa). <br />
-![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Notificationgif.gif)
+ <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Notificationgif.gif width="25%" height="25%">
 
 ## Uno sguardo da vicino
 L'applicazione è basata sul modello **MVC**: **M**odel, **V**iew, **C**ontroller.
