@@ -5,7 +5,7 @@ Progetto per la parte Android del corso MobDev, consiste in un'applicazione per 
 Con l'app **Memorandum** è possibile:
 
  - Aggiungere memo con un titolo, una descrizione, un luogo, una data ed un'ora. <br />
-  ![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Addactivtygif.gif)
+   <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Addactivtygif.gif width="25%" height="25%">
  
  - Impostare la memo come ''completata'' o riportarla allo stato ''attiva'' <br />
  ![](https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Detailactivitygif.gif)
