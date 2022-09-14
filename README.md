@@ -32,7 +32,7 @@ L'unico **fragment** presente ha un linear layout verticale, vista la semplicit�
 
 L'applicazione è formata da 4 **activities** ed un **fragment**, la *comunicazione* tra activities avviente tramite l'utilizzo di **intent**.
 
- - La **mainActivity** è il punto d'ingresso principale dell'applicazione, è composta da una una *text label* che rappresenta che tipo di memo si sta visualizzando (attiva, completata o scaduta), da 3 *floatingActionButton* utilizzati per accedere alle altre 3 activities e da un **RecyclerViewer** utilizzato per mostrare le note.<br />
+ - La **mainActivity** è il punto d'ingresso principale dell'applicazione, composta da una una *text label* che rappresenta che tipo di memo si sta visualizzando (attiva, completata o scaduta), da 3 *floatingActionButton* utilizzati per accedere alle altre 3 activities e da un **RecyclerViewer** utilizzato per mostrare le note.<br />
 Oltre a mostrare le note la MainActivity si occupa di inizializzare il *locationManager* per ottenere la posizione dell'utente e inizializza le  *geofences* delle memo attive.<br />
 //immagine mainactivity
 
