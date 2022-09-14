@@ -33,7 +33,7 @@ L'unico **fragment** presente ha un linear layout verticale, vista la semplicit�
 L'applicazione è formata da 4 **activities** ed un **fragment**, la *comunicazione* tra activities avviente tramite l'utilizzo di **intent**.
 
  - La **mainActivity** è il punto d'ingresso principale dell'applicazione, composta da una una *text label* che rappresenta che tipo di memo si sta visualizzando (attiva, completata o scaduta), da 3 *floatingActionButton* utilizzati per accedere alle altre 3 activities e da un **RecyclerViewer** utilizzato per mostrare le note.<br />
-Oltre a mostrare le note la MainActivity si occupa di inizializzare il *locationManager* per ottenere la posizione dell'utente e inizializza le  *geofences* delle memo attive.<br />
+Oltre a mostrare le note la MainActivity si occupa di inizializzare il *locationManager* per ottenere la posizione dell'utente e inizializza le  *geofences* delle memo attive. Ogni volta che viene chiamato il metodo "*onPause*" della mainActivity (ovvero quando vengno aperte altre activity, o l'app viene lasciata in background) viene chiamato il metodo "*locationManager.removeUpdates()*" per smettere di utilizzare la posizione dell'utente per evitare consumi inutili della batteria del dispositivo.<br />
 //immagine mainactivity
 
  -  L' **addActivity** si occupa dell'aggiunta delle memo, una volta inseriti il *titolo*, una *descrizione*, il *luogo* nei rispettivi *EditText* e la *data* e l'*ora* negli appositi *widget* è possibile creare la memo premendo il tasto apposito.<br />
@@ -56,6 +56,6 @@ La funzione che si occupa di effettuare tutti questi controlli prende il nome di
 
 La visualizzazione delle memo avviene tramite **recyclerViewer** della mainActivity. La classe **MemoAdapter** rappresenta l'adattatore della recyclerView, viene utilizzato per fornire al LayoutManager informazioni su quanti elementi devono essere visualizzati e la View effettiva da utilizzare. <br />
 In questo progetto tutte le memo sono presenti su unico Adapter dotato di un attributo "*status*" che indica quale tipo di memo mostrare (attive/completate/scadute), in base al bottone che l'utente preme viene impostato uno dei tre stati come attributo dalla MainActivity. <br />
-Il controllo per decidere quale tipo di memo visualizzare viene eseguito nell'override del metodo *onBindViewHolder*, in base allo stato viene impostato anche il colore e lo stile del carattere da impostare. (un'alternativa valida a questo tipo di approccio era quella di utilizzare dei fragments per rappresentare le varie tipologie di memo)
+Il controllo per decidere quale tipo di memo visualizzare viene eseguito nell'override del metodo *onBindViewHolder*, in base allo stato viene impostato anche il colore e lo stile del carattere da impostare, tutte le memo vengono mostrate in ordine di data. (un'alternativa valida a questo tipo di approccio era quella di utilizzare dei fragments per rappresentare le varie tipologie di memo)
 
 ### Notifications
