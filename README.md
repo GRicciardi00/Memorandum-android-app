@@ -5,16 +5,17 @@ Progetto per la parte Android del corso MobDev, consiste in un'applicazione per 
 Con l'app **Memorandum** è possibile:
 
  - Aggiungere memo con un titolo, una descrizione, un luogo, una data ed un'ora. <br />
-   <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Addactivtygif.gif width="25%" height="25%">
+ <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Addactivtygif.gif width="25%" height="25%">
  
  - Impostare la memo come ''completata'' o riportarla allo stato ''attiva'' <br />
-  <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Detailactivitygif.gif width="25%" height="25%">
+ <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Detailactivitygif.gif width="25%" height="25%">
 
  - Visualizzare le memo attive, complete o scadute. <br />
  <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/mainactivirtgif.gif width="25%" height="25%">
 
  - Visualizzare sulla mappa tutte le notifiche attive. <br />
  <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/MapActivitygif.gif width="25%" height="25%">
+ 
  - Ricevere una notifica sul dispositivo quando ci si avvicina ad una memo attiva (anche se l'app è chiusa). <br />
  <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Notificationgif.gif width="25%" height="25%">
 
