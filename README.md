@@ -61,6 +61,8 @@ La funzione che si occupa di effettuare tutti questi controlli prende il nome di
 
 La visualizzazione delle memo avviene tramite **recyclerViewer** della mainActivity. La classe **MemoAdapter** rappresenta l'adattatore della recyclerView, viene utilizzato per fornire al LayoutManager informazioni su quanti elementi devono essere visualizzati e la View effettiva da utilizzare. <br />
 In questo progetto tutte le memo sono presenti su unico Adapter dotato di un attributo "*status*" che indica quale tipo di memo mostrare (attive/completate/scadute), in base al bottone che l'utente preme viene impostato uno dei tre stati come attributo dalla MainActivity. <br />
-Il controllo per decidere quale tipo di memo visualizzare viene eseguito nell'override del metodo *onBindViewHolder*, in base allo stato viene impostato anche il colore e lo stile del carattere da impostare, tutte le memo vengono mostrate in ordine di data. (un'alternativa valida a questo tipo di approccio era quella di utilizzare dei fragments per rappresentare le varie tipologie di memo)
+Il controllo per decidere quale tipo di memo visualizzare viene eseguito nell'override del metodo *onBindViewHolder*, in base allo stato viene impostato anche il colore e lo stile del carattere da impostare, tutte le memo vengono mostrate in ordine di data. <br />
+**NB** : un'alternativa valida a questo tipo di approccio era quella di utilizzare dei fragments per rappresentare le varie tipologie di memo.
 
-### Notifications
+### Notifications & Geofencing
+Le classi che si occupano di creare le geofences e di gestire l'invio delle notifiche sono: 
