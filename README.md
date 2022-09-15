@@ -65,4 +65,7 @@ Il controllo per decidere quale tipo di memo visualizzare viene eseguito nell'ov
 **NB** : un'alternativa valida a questo tipo di approccio era quella di utilizzare dei fragments per rappresentare le varie tipologie di memo.
 
 ### Notifications & Geofencing
-Le classi che si occupano di creare le geofences e di gestire l'invio delle notifiche sono: 
+Le classi che si occupano di creare le geofences e gestire l'invio delle notifiche sono: *GeofenceHelper*,*Notification Helper*, *NotificationBroadcast receiver*.
+ - **GeofenceHelper** comprende tutti i metodi utili alla creazione di geofences (tramite API Google), utilizzati nella mainActivity. Per utilizzare le geofences è necessario l'autorizzazione da parte dell'utente per: ACCESS_BACKGROUND_LOCATION. Ogni GeoFenceHelper ha una memo associata che viene utilizzata dal metodo "getPendingIntent" per ottenere le informazioni della memo e passarle al **GeoFencingClient** che si occupa della registrazione della geofence.
+ - **NotificationBroadCastReceiver** recupera le informazioni passate al **GeoFencingClient** e chiama il metodo ''*sendHighPriorityNotification*'' della classe **NotificationHelper** per mandare una notifica.
+ - **NotificationHelper** si occupa di gestire tutte le operazioni del *NotificationManager*, crea un canale di ricezione delle notifiche e manda le notifiche su quel canale.
