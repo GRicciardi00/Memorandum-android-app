@@ -24,7 +24,7 @@ L'applicazione è basata sul modello **MVC**: **M**odel, **V**iew, **C**ontrolle
 ### Model
 >Il *model* si occupa di definire i dati dell'applicazione. <br />
 
-Le classi *Memo* e *MemoList* costituiscono il model dell'applicazione. MemoList permette di ricavare una lista di tutte le memo attive ed ha anche altri metodi utilizzati dalle varie activity.
+Le classi *Memo* e *MemoList* costituiscono il model dell'applicazione. MemoList permette di ricavare una lista di tutte le memo attive ed ha anche altri metodi utilizzati dalle varie activities.
 ### View
 > Le *view* visualizzano i dati contenuti nel model e "catturano" l'interazione dell'utente con l'applicazione
 >
@@ -41,7 +41,7 @@ Oltre a mostrare le note la MainActivity si occupa di inizializzare il *location
 <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/MainActivity.png width="25%" height="25%">
 
  -  L' **addActivity** si occupa dell'aggiunta delle memo, una volta inseriti il *titolo*, una *descrizione*, il *luogo* nei rispettivi *EditText* e la *data* e l'*ora* negli appositi *widget* è possibile creare la memo premendo il tasto apposito.<br />
- Una volta premuto il tasto viene effettuato un controllo per vedere se dei campi sono vuoti e controllare che l'utente abbia inserito una data valida (dal giorno attuale in poi), infine verifica se l'operazione di **geocoding** per ricavare latitudine e longitudine dal luogo inserito è andata a buon fine. <br />
+ Una volta premuto il tasto viene effettuato un controllo per vedere se dei campi sono vuoti,controlla che la data inserita dall'utente sia valida (dal giorno attuale in poi) ed infine verifica se l'operazione di **geocoding** per ricavare latitudine e longitudine dal luogo inserito è andata a buon fine. <br />
 La funzione che si occupa di effettuare tutti questi controlli prende il nome di "*saveInput*" ed è impostata come proprietà *onclick* del FloatingActionButton nel file XML *activity_add*, in caso di campi non validi o mancanti viene chiamata una **ToastNotification** per segnalarlo all'utente.<br />
 <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/AddActivity.png width="25%" height="25%">
 
@@ -60,9 +60,9 @@ La funzione che si occupa di effettuare tutti questi controlli prende il nome di
 >La classe RecyclerView semplifica la visualizzazione e la gestione di insiemi di dati di grandi dimensioni, è un contenitore per la visualizzazione di insiemi di dati di grandi dimensioni che è possibile scorrere in modo efficiente mantenendo un numero limitato di Views.
 
 La visualizzazione delle memo avviene tramite **recyclerViewer** della mainActivity. La classe **MemoAdapter** rappresenta l'adattatore della recyclerView, viene utilizzato per fornire al LayoutManager informazioni su quanti elementi devono essere visualizzati e la View effettiva da utilizzare. <br />
-In questo progetto tutte le memo sono presenti su unico Adapter dotato di un attributo "*status*" che indica quale tipo di memo mostrare (attive/completate/scadute), in base al bottone che l'utente preme viene impostato uno dei tre stati come attributo dalla MainActivity. <br />
+In questo progetto tutte le memo sono presenti su un unico Adapter dotato di un attributo "*status*" che indica quale tipo di memo mostrare (attive/completate/scadute), in base al bottone che l'utente preme viene impostato uno dei tre stati come attributo dalla MainActivity. <br />
 Il controllo per decidere quale tipo di memo visualizzare viene eseguito nell'override del metodo *onBindViewHolder*, in base allo stato viene impostato anche il colore e lo stile del carattere da impostare, tutte le memo vengono mostrate in ordine di data. <br />
-**NB** : un'alternativa valida a questo tipo di approccio era quella di utilizzare dei fragments per rappresentare le varie tipologie di memo.
+**NB** : un'alternativa valida a questo tipo di approccio era quella di utilizzare dei fragments con memoadapter differenti per rappresentare le varie tipologie di memo.
 
 ### Notifications & Geofencing
 Le classi che si occupano di creare le geofences e gestire l'invio delle notifiche sono: *GeofenceHelper*,*Notification Helper*, *NotificationBroadcast receiver*.
