@@ -15,7 +15,7 @@ With the **Memorandum** app you can:
  - View all active reminders on the map. <br />
  <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/MapActivitygif.gif width="25%" height="25%">
  
- -Receive a notification on your device when you approach an active memo (even if the app is closed). <br />
+ - Receive a notification on your device when you approach an active memo (even if the app is closed). <br />
  <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Notificationgif.gif width="25%" height="25%">
 
 ## A close look on it
@@ -49,7 +49,7 @@ The function that carries out all these checks is called '*saveInput*' and is se
 
 <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/AddActivity.png width="25%" height="25%">
 
- -The **detailActivity** is called in the **memoAdapter** *onclick* event override. Shows title, expiration, location and description of the selected memo, also there is a button to change the status of the memo (active/completed), if the memo has expired (check done using the two methods of the Utils class) sets the TextColor of the TextView of the date to red.<br />
+ - The **detailActivity** is called in the **memoAdapter** *onclick* event override. Shows title, expiration, location and description of the selected memo, also there is a button to change the status of the memo (active/completed), if the memo has expired (check done using the two methods of the Utils class) sets the TextColor of the TextView of the date to red.<br />
 <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/DetailActivity.png width="25%" height="25%">
  
  - The **mapActivity** shows a map,created through the google map API, centred on the user's location.<br />
@@ -70,7 +70,7 @@ Memo displays are via the mainActivity **recyclerViewer**. The **MemoAdapter** c
 In this project, all memos are present on a single Adaptor with a '*status*' attribute that indicates what type of memo to show (active/completed/expired), depending on the button the user presses, one of the three states is set as the attribute by the MainActivity. <br />
 
 The control to decide which type of memo to display is performed in the override of the *onBindViewHolder* method, depending on the status the colour and style of the font to be set is also set, all memos are shown in order of date. <br />
-**NB** :A viable alternative to this type of approach was to use fragments with different memoadapters to represent the various types of memos.
+**NB** : An avaiable alternative to this type of approach is to use fragments with different memoadapters to represent the various types of memos.
 
 ### Notifications & Geofencing
 The classes that create geofences and manage the sending of notifications are: *GeofenceHelper*,*Notification Helper*, *NotificationBroadcast receiver*.
