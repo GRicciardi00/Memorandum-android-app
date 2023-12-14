@@ -6,7 +6,7 @@ With the **Memorandum** app you can:
  - Add memos with a title, description, place, date, and time. <br />
  <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Addactivtygif.gif width="25%" height="25%">
  
- -Set the memo to ''completed'' or return it to ''active'' state <br />
+ - Set the memo to ''completed'' or return it to ''active'' state <br />
  <img src=https://github.com/GRicciardi00/MobDev-Giuseppe-Ricciardi-Android/blob/main/Screenshots/Detailactivitygif.gif width="25%" height="25%">
 
  - View active, complete, or expired memos. <br />
